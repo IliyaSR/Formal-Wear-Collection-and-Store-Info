@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?mily=Playfair+Display:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins";
+}
+
+
+/* Main */
+
+.image-container{
+    position: relative;
+}
+
+.main-image{
+    display: block;
+    max-width: 100%;
+    height: auto;
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+main h1{
+    color: #FFFFFF;
+    font-size: 64px;
+    font-family: 'Playfair Display', serif;
+    position: absolute;
+    top: 76%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+}
+
+@media (max-width: 1200px){
+    main h1{
+        font-size: 50px;
+    }
+}
+
+@media (max-width: 750px) {
+    main h1{
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 600px){
+    main h1{
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 445px){
+    main h1{
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 370px){
+    main h1{
+        font-size: 20px;
+    }
+}
+
+
+.h3-categories{
+    font-size: 32px;
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+    color: #FFFFFF;
+    margin: 20px 0 40px 0;
+}
+
+#categories{
+    text-align: center;
+}
+
+#categories div{
+    margin-bottom: 30px;
+}
+
+#categories div > a >img:hover{
+    transform: scale(1.05);
+}
+
+#third-section{
+    margin-top: 70px;
+    margin-bottom: 50px;
+}
+
+#third-section > div:nth-child(2){
+    text-align: right;
+}
+
+.hash-raffinato{
+    color: #80ADCE;
+    font-size: 28px;
+    font-weight: 400;
+}
+
+.hash-raffinato-text{
+    color: #FFFFFF;
+    font-size: 28px;
+    font-weight: 400;
+}
+
+@media (max-width: 991px) {
+    #third-section > div:nth-child(1){
+        text-align: center;
+        padding-bottom: 20px;
+    }
+    #third-section > div:nth-child(2){
+        text-align: center;
+    }
+}
+
+@media (max-width: 650px) {
+    .raffinato-image{
+        width: 90%;
+    }
+
+    .hash-raffinato, .hash-raffinato-text{
+        font-size: 24px;
+    }
+}

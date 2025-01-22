@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <title>Home page</title>
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link rel="stylesheet" href="../css/home-page.css">
+    <link rel="stylesheet" href="../css/header-footer.css">
+</head>
+<body>
+    <header>
+        <div class="container-fluid">
+            <div class="row" id="row">
+                <div class="col-6 col-md-2 col-lg-2" id="img-container">
+                    <img src="../images/RAFFINATO.png" alt="Logo" class="img">
+                </div>
+                <div class="col-6 d-md-none text-end" id="hamburger-container">
+                    <div class="hamburger-icon" onclick="toggleMenu()">&#9776;</div>
+                </div>                
+                <div class="cols-xs-9 col-md-10 col-lg-10" id="menu-container">
+                    <nav class="menu">
+                        <ul>
+                            <div class="row justify-content-md-center">
+    
+                                <div class="col-md-2 col-xl-2">
+                                    <li class="header-list"><a class="header-links" id="active" href="home-page.html">Home</a></li>
+                                </div>
+                                <div class="col-md-2 col-xl-2">
+                                    <li class="header-list"><a class="header-links" href="collection-page.html">Collections</a></li>
+                                </div>
+                                <div class="col-md-2 col-xl-2">
+                                    <li class="header-list"><a class="header-links" href="stores-page.html">Stores</a></li>
+                                </div>
+                                <div class="col-md-2 col-xl-2">
+                                    <li class="header-list"><a class="header-links" href="about-us-page.html">About Us</a></li>
+                                </div>
+                                <div class="col-md-3 col-xl-3" id="contact-icon">
+                                    <a href="contact-us.html" class="header-links"><i class="fa-solid fa-phone"></i></a>
+                                    <li class="header-list" id="contact-list"><a class="header-links" href="contact-us.html">Contact Us</a></li>
+                                </div>
+                            </div>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section>
+            <div class="image-container">
+                <img class="main-image" src="../images/home-page-image.png" alt="">
+                <h1>Class is a Choise</h1>
+            </div>
+        </section>
+        <section>
+            <h3 class="h3-categories">Categories</h3>
+            <div class="container-fluid">
+                <div class="row" id="categories">
+                    <div class="col-md-6 col-xxl-3"><a href="blazers-page.html"><img src="../images/Blazers.png" alt="Blazers-image"></a></div>
+                    <div class="col-md-6 col-xxl-3"><a href="pants-page.html"><img class="pants-image" src="../images/Custom Pants.png" alt="Custom Pants-image"></a></div>
+                    <div class="col-md-6 col-xxl-3"><a href="suits-page.html"><img src="../images/Suits.png" alt="Suits-image"></a></div>
+                    <div class="col-md-6 col-xxl-3"><a href="outerwear-page.html"><img src="../images/Outerwear.png" alt="Outerwear-image"></a></div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container-xxl">
+                <div class="row" id="third-section">
+                    <div class="col-lg-4">
+                        <h4 class="hash-raffinato">#RAFFINATO</h4>
+                        <p class="hash-raffinato-text">
+                            Fashion for menContemporary yet authentic Raffinatoembodies the essence of Italian menswear craftsmanship.
+                        </p>
+                    </div>
+                    <div class="col-lg-8">
+                        <img class="raffinato-image" src="../images/store2.png" alt="">
+                    </div>
+                </class>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-6 col-sm-9 col-md-9 col-lg-10">
+                    <a class="footer-hyperlinks" href="stores-page.html">Stores</a>
+                    <a class="footer-hyperlinks" href="collection-page.html">Collections</a>
+                </div>
+                <div class="col-xs-6 col-sm-3 col-md-3 col-lg-2">
+                    <a class="footer-hyperlinks" href="about-us-page.html">About Us</a>
+                    <a class="footer-hyperlinks" href="contact-us.html">Contact Us</a>
+                </div>
+            </div>
+        </div>
+        <hr class="footer-line">
+        <div class="icons-container">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-tiktok"></i>
+            <i class="fa-brands fa-youtube"></i>
+        </div>
+        
+    </footer>
+    <script>
+        function toggleMenu(){
+            const menu = document.querySelector('.menu')
+            menu.classList.toggle('show')
+        }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
