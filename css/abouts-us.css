@@ -1,0 +1,292 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins";
+}
+
+/* Header */
+
+body {
+    background-color: #161616;
+}
+
+.header-links {
+    position: relative;
+    font-size: 18px;
+    color: #FFFFFF;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.header-links::after {
+    content: ' ';
+    position: absolute;
+    height: 1px;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    background-color: #FFFFFF;
+    transition: width .3s;
+}
+
+.header-links:hover {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.header-links:hover::after {
+    width: 100%;
+}
+
+
+.header-list {
+    list-style-type: none;
+    text-align: center;
+}
+
+#contact-icon {
+    text-align: right;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.hamburger-icon {
+    font-size: 24px;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: none;
+}
+
+header{
+    padding-left: 1%;
+}
+
+header .row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+
+#row{
+    padding: 0;
+}
+
+#hamburger-container{
+    text-align: end;
+}
+
+.menu ul{
+    padding: 0px;
+}
+
+#contact-list{
+    display: none;
+}
+
+@media (max-width: 600px){
+    .header-links{
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 445px){
+    .header-links{
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 768px) {
+    .hamburger-icon {
+        display: block;
+    }
+
+    #img-container {
+        text-align: left;
+    }
+
+    .menu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 15px;
+        right: 0;
+        background-color: #161616;
+        width: 100%;
+        z-index: 1000;
+        padding-right: 5%;
+    }
+
+    .menu.show {
+        display: flex;
+    }
+    
+    .menu ul div{
+        padding-top: 0;
+        padding-left: 3%;
+    }
+    
+    #row{
+        padding-top: 10px;
+    }
+
+    .header-list{
+        text-align: start;
+    }
+
+    .fa-solid{
+        display: none;
+    }
+
+    #contact-list{
+        display: flex;
+    }
+
+}
+
+
+/* Main */
+.about-us-image-container{
+    text-align: center; 
+    margin: 40px 0;
+}
+
+.about-us-image-container img{
+    height: auto;
+    max-width: 100%;
+}
+
+.header-about{
+    color: #FFFFFF;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 50px;
+    font-family: "Playfair Display";
+    font-size: 40px;
+}
+
+#second-section-container{
+    width: 75%;
+}
+
+#second-section-container h2{
+    color: #FFFFFF;
+    font-size: 44px;
+    font-family: 'Playfair Display';
+    margin-top: 50px;
+}
+
+#second-section-container p{
+    margin-top: 50px;
+    color: #FFFFFF;
+    font-family: 'Poppins, serif';
+    font-size: 26px;
+    opacity: 95%;
+}
+
+.second-img{
+    max-height: 100%;
+    height: auto;
+}
+
+@media (max-width: 991px) {
+    .second-section, .third-section, .fourth-section{
+        align-items: center;
+        text-align: center;
+    }
+    #second-section-container{
+        width: 100%;
+    }
+}
+
+.third-section{
+    margin-top: 90px;
+}
+
+.third-section h2{
+    color: #FFFFFF;
+    font-family: 'Playfair Display';
+    font-size: 46px;
+}
+
+.third-section p{
+    color: #FFFFFF;
+    font-family: 'Poppins, serif';
+    font-size: 26px;
+    opacity: 95%;
+}
+
+.fourth-section{
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
+
+.fourth-section h2{
+    color: #FFFFFF;
+    font-family: 'Playfair Display';
+    font-size: 46px;
+}
+
+.fourth-section p{
+    color: #FFFFFF;
+    font-family: 'Poppins, serif';
+    font-size: 26px;
+    opacity: 95%;
+    margin-top: 20px;
+}
+
+.fourth-section img{
+    height: auto;
+    max-width: 100%;
+}
+
+/* FOOTER*/
+
+footer{
+    padding: 1%;
+    background-color: #494C4F;
+}
+
+.footer-hyperlinks{
+    text-decoration: none;
+    display: block;
+    font-weight: 500;
+    font-size: 16px;
+    color: #FFFFFF;
+    padding-top: 7px;
+}
+
+.footer-hyperlinks:hover{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.fa-brands{
+    font-size: 20px;
+    margin-left: 2%;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.icons-container{
+    text-align: center;
+}
+
+.footer-line{
+    width: 85%;
+    text-align: center;
+    margin: 20px auto 0 auto;
+    border: 1px solid #FFFFFF;
+}
+
+.line-container{
+    align-items: center;
+    text-align: center;
+}
+
+.icons-container{
+    margin-top: 30px;
+}
